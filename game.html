@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAME ON!</title>
+    <link rel="stylesheet" href="game.css" type="text/css" media="screen">
+    
+    <script defer src="functions.js"></script>
+    <script defer src="E-Card01.js"></script>
+    <script defer src="E-Card02.js"></script>
+   
+</head>
+<body>
+    <div class="blur"></div>
+    <div >
+    <div class="top">
+        <div  class="topins" id="comcards">
+
+           
+
+
+            <div class="com5cards"id="com1card" >
+                <img src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div  class="com5cards"id="com2card" >
+                <img  src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="com5cards"id="com3card">
+                <img  src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="com5cards"id="com4card" >
+                <img src="emperor.gif" width="52px" height="75px">
+            </div>
+            <div class="com5cards"id="com5card" >
+                <img  src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+
+         
+            <div class="com5cards"id="com1cardc"  >
+                <img  src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div  class="com5cards"id="com2cardc" >
+                <img src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="com5cards"id="com3cardc">
+                <img  src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="com5cards"id="com4cardc">
+                <img src="cover.jpg" width="52px" height="75px">
+            </div>
+            <div class="com5cards"id="com5cardc" >
+                <img  src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+        </div>
+      
+        <div class="topins" id="combet"> <!--the one above combet is topins so making combet absolute in position will make it move according to topins position.   flipcom1(); flipcom2(); flipcom3(); flipcom4(); flipcom5()-->
+            
+            <button id="showcom" onclick="showcom() ">
+                Show
+            </button>
+            <button id="covercom" onclick="covercom() ">
+                Cover
+
+            </button>
+            <div class="pbet">
+                BET
+                <div id="place">Place :</div>
+                <div id="tchips">Total Chips:</div>
+                <div id="tchipsvalue"> 
+                    <img id="chipimg" src="images-removebg-preview (7).png" alt="-" >
+                    <input id="tcnovalue" type="text">
+                </div>
+            </div>
+           
+            
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middleins" id="showncards">
+            <div class="howmany">
+                How many games do you want to play?
+            </div>
+            <div class="nop">
+                <div onclick="carddistribution()" class="times" id="one">1</div>
+                <div onclick="carddistribution()"class="times"id="t">3</div>
+                <div onclick="carddistribution()"class="times" id="f">5</div>
+                <div onclick="carddistribution()" class="times" id="s">7</div>
+                <div onclick="carddistribution()"class="times"id="n">9</div>
+            </div>
+        </div>
+
+        <div class="middleins" id="mywin" >
+         ME
+        
+         <div id="mypoint">
+            0
+              <!-- for storing html code in js, soln for this problem... https://www.tutorialrepublic.com/faq/how-to-assign-block-of-html-code-to-a-javascript-variable.php#:~:text=Answer%3A%20Use%20the%20concatenation%20operator,in%20the%20actual%20HTML%20code. -->
+         </div>
+        </div>
+        <div class="middleins" id="comwin">
+         COM
+         <div id="compoint">
+            0
+         </div>
+        </div>
+
+ 
+    </div>
+    <div class="bottom">
+        <div class="bottomins" id="mycards">
+
+            
+            <div class="my5cards"id="my1card" >
+               <img src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="my5cards"id="my2card">
+                <img src="slave.gif" width="52px" height="75px">
+            </div>
+            <div class="my5cards"id="my3card" >
+               <img src="citizen.jpg" width="52px" height="75px" alt="citizen" >
+            </div>
+            <div class="my5cards"id="my4card">
+                <img src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="my5cards"id="my5card">
+               <img src="citizen.jpg" width="52px" height="75px" alt="citizen">
+            
+            </div>
+            <div class="my5cards"id="my1cardc">
+                <img src="done_all_FILL0_wght400_GRAD0_opsz48.png" class="tick"><img src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="my5cards"id="my2cardc">
+                <img src="done_all_FILL0_wght400_GRAD0_opsz48.png" class="tick"><img src="cover.jpg" width="52px" height="75px" >
+            </div>
+            <div class="my5cards"id="my3cardc">
+                <img src="done_all_FILL0_wght400_GRAD0_opsz48.png" class="tick"><img src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="my5cards"id="my4cardc" >
+                <img src="done_all_FILL0_wght400_GRAD0_opsz48.png" class="tick"><img src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+            <div class="my5cards"id="my5cardc" >
+                <img src="done_all_FILL0_wght400_GRAD0_opsz48.png" class="tick"><img src="cover.jpg" width="52px" height="75px" alt="citizen">
+            </div>
+
+
+
+        </div>
+      
+        <div class="bottomins" id="mybet">
+            <button id="showmy" onclick="showmy() ">
+                Show
+
+            </button> 
+            <button id="covermy" onclick="covermy() ">
+                Cover
+
+            </button>
+
+            <div class="pbet">
+                BET
+                <div id="place">Place :</div>
+                <div id="tchips">Total Chips:</div>
+                <div id="tchipsvalue"> 
+                    <img id="chipimg" src="images-removebg-preview (7).png" alt="-" >
+                    <input id="tcnovalue" type="text">
+                </div>
+            </div>
+           
+        </div>
+    </div>
+</div>
+
+    
+
+      
+   
+
+</script>
+</body>
+</html>
