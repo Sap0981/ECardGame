@@ -13,7 +13,7 @@
         {
           let memoryofg= document.createElement('p')
           memoryofg.classList.add('gvalue')
-          print(memoryofg.innerHTML)
+          print(memoryofg.outerHTML)
           memoryofg.innerText=G
           document.body.appendChild(memoryofg)
         }
