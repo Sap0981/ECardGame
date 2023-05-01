@@ -13,7 +13,7 @@
         {
           let memoryofg= document.createElement('p')
           memoryofg.classList.add('gvalue')
-          memoryofg.innerText=G
+          memoryofg.style.display="none"
           memoryofg.innerText=G
           document.body.appendChild(memoryofg)
         }
@@ -76,7 +76,7 @@
       }
       else if(confirm('`Wanna Continue Playing~ ?')==false)
       {
-        alert('fuck off thenn...')
+        alert('Go off thenn...')
         location.replace('https://www.youtube.com')
       }
       
