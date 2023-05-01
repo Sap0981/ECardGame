@@ -227,14 +227,14 @@ function givingwinningpoints(){
             das=2
             if(parseInt(comwinpoint.innerText)<parseInt(mywinpoint.innerText))
             {
-             roundoverdivinmiddle.innerText="BITCH!!, You Won The GAME!"
+             roundoverdivinmiddle.innerText=" You Won The GAME!"
              roundoverdivinmiddle.classList.add('gameoverme')
              setTimeout(nextround,2000)
              setTimeout(nextroundstart(das),2200)
             }
             else if(parseInt(comwinpoint.innerText)>parseInt(mywinpoint.innerText))
             {
-             roundoverdivinmiddle.innerText="BITCH!!, You lost The GAME!"
+             roundoverdivinmiddle.innerText=" You lost The GAME!"
              roundoverdivinmiddle.classList.add('gameovercom')
              setTimeout(nextround,2000)
              setTimeout(nextroundstart(das),2200)
@@ -266,14 +266,14 @@ function givingwinningpoints(){
                  das=2
                  if(parseInt(comwinpoint.innerText)<parseInt(mywinpoint.innerText))
                  {
-                  roundoverdivinmiddle.innerText="BITCH!!, You Won The GAME!"
+                  roundoverdivinmiddle.innerText=" You Won The GAME!"
                   roundoverdivinmiddle.classList.add('gameoverme')
                   setTimeout(nextround,2000)
                   setTimeout(nextroundstart(das),2200)
                  }
                  else if(parseInt(comwinpoint.innerText)>parseInt(mywinpoint.innerText))
                  {
-                  roundoverdivinmiddle.innerText="BITCH!!, You lost The GAME!"
+                  roundoverdivinmiddle.innerText=" You lost The GAME!"
                   roundoverdivinmiddle.classList.add('gameovercom')
                   setTimeout(nextround,2000)
                   setTimeout(nextroundstart(das),2200)
