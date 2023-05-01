@@ -537,7 +537,10 @@ div>.tothemiddlemy{
 .gameovercom{
   color:salmon ;
 }
-
+.gvalue{
+ position:absolute;
+ left:20%;
+}
  
 
 
