@@ -14,6 +14,7 @@
           let memoryofg= document.createElement('p')
           memoryofg.classList.add('gvalue')
           memoryofg.innerText=G
+          memoryofg.innerText=G
           document.body.appendChild(memoryofg)
         }
         Array.from(document.getElementById('showncards').children).forEach((e)=>{e.remove()})
