@@ -6,10 +6,8 @@
     let a=document.getElementsByClassName('times')
     for(let i=0;i<5;i++)
     {
-      
       a[i].addEventListener('click',(t)=>{
         const G=t.target.innerHTML
-        console.log(G)
         {
           let memoryofg= document.createElement('p')
           memoryofg.classList.add('gvalue')
@@ -17,7 +15,6 @@
           document.body.appendChild(memoryofg)
         }
         Array.from(document.getElementById('showncards').children).forEach((e)=>{e.remove()})
-
       })
     }
   
